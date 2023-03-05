@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="head-title">Survey Form</title>
+        <link rel="stylesheet" hre="/01-newResponsiveWebDesign/CertificationProyect-SurveyForm/styles.css">
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description"></p>
+        <form id="survey-form"> <!--IDEA: Here you could add some "IF" logic with JS to make a return message if some data is in a wrong format-->
+            <fieldset id="user-data-fieldset">
+                <label id="name-label">Enter Your Name: <input id="name" type="text" placeholder=' e.g. "Albert Einstein" ' /></label>
+                <hr>
+                <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder=' e.g. "albert.einstein@genius.com"' /></label>
+                <hr>
+                <label id="number-label">Enter Your Age: <input id="number" type="number" placeholder=' e.g. "76" ' min="" max="" /></label>
+            </fieldset>
+            <fieldset id="choice-fieldset" name="choice-fieldset">
+                <label><input type="radio" /> </label>
+                <label><input type="radio" /> </label>
+                <label><input type="radio" /> </label>
+            </fieldset>
+            <fieldset id="checkbox-fieldset">
+                <label><input value="" /> </label>
+                <label><input value="" /> </label>
+                <label><input value="" /> </label>
+            </fieldset>
+            <fieldset id="dropdown-fieldset">
+                <label id="dropdown-label">
+                    <select id="dropdown">
+                        <option value=""></option>
+                        <option value="1"></option>
+                        <option value="2"></option>
+                    </select>
+                </label>
+                <label for="bio">
+                    <textarea id="bio"></textarea>
+                </label>
+            </fieldset>
+            <input id="submit" type="submit" value="Submit" />
+        </form>
+    </body>
+</html>
