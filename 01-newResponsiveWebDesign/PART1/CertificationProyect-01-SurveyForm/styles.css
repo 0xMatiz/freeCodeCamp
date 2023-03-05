@@ -1,3 +1,46 @@
-head {
+body {
+    background-color: black;
+    /* background-color: rgb(0, 2, 100); */
+    color: white;
+    max-width: 500px;
+    min-width: 100px;
+}
+
+hr {
+    border: 0;
+    border-color: rgb(2, 2, 131);
+}
+
+h1 {
     text-align: center;
+    background: linear-gradient( rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    /* background-color: rgb(2, 2, 131); */
+    color: white;
+    font-family: sans-serif;
+    font-style: Bold;
+}
+
+p {
+    font-family: sans-serif;
+    font-style: Bold;
+}
+
+fieldset {
+    background: linear-gradient(rgba(0, 0, 255, 0.5), rgb(15, 15, 15));
+    color: white;
+    font-family: sans-serif;
+    font-style: Bold;
+    min-width: 500px;
+}
+
+input[type="submit"] {
+    margin: 10px 0 0 0;
+    font-family: sans-serif;
+    font-size: 16px;
+    
+}
+
+textarea {
+    min-width: 460px;
+    min-height: 100px;
 }

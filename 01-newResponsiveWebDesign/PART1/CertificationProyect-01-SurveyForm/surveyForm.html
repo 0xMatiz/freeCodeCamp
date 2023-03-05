@@ -2,41 +2,58 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title id="head-title">Survey Form</title>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <h1 id="title">Survey Form</h1>
-        <p id="description">not empty</p>
+        
+        <p id="description">In this survey form you will be asked some data to let me know a little bit about who are the people that follow my website. This is optional and i appreciate you took time for letting me know!</p>
+        
         <form id="survey-form"> <!--IDEA: Here you could add some "IF" logic with JS to make a return message if some data is in a wrong format-->
-            <fieldset>
+            
+            <fieldset>Personal Data:
+                <hr class="personal-data-hr">
                 <label id="name-label">Enter Your Name: <input id="name" type="text" placeholder=' e.g. "Albert Einstein" ' required /></label>
                 <hr>
                 <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder=' e.g. "albert.einstein@genius.com"' required /></label>
                 <hr>
                 <label id="number-label">Enter Your Age: <input id="number" type="number" placeholder=' e.g. "76" ' min="1" max="120" required /></label>
             </fieldset>
-            <fieldset>
-                <label for="choice-one"><input id="choice-one" value="1" name="choice" type="radio"/>1</label>
-                <label for="choice-two"><input id="choice-two" value="2" name="choice" type="radio" />2</label>
+
+            <fieldset>What is your approach to this website?
+                <hr>
+                <label for="choice-one"><input id="choice-one" value="1" name="choice" type="radio"/> Curiosity</label>
+                <hr>
+                <label for="choice-two"><input id="choice-two" value="2" name="choice" type="radio" /> Searching For Advice</label>
             </fieldset>
-            <fieldset id="checkbox-fieldset">
-                <label><input value="1" type="checkbox"/>1</label>
-                <label><input value="2" type="checkbox"/>2</label>
-                <label><input value="3" type="checkbox"/>3</label>
+
+            <fieldset id="checkbox-fieldset">I accept:
+                <hr>
+                <label><input value="1" type="checkbox" /> That this information will only be used for personal research purposes.</label>
+                <hr>
+                <label><input value="2" type="checkbox" required /> The terms and conditions of this website.</label>
+                <hr>
+                <label><input value="3" type="checkbox" /> Receiving newsletter and updates about this website.</label>
             </fieldset>
+
             <fieldset>
-                <label>
+                <label>How did you get to my website?
+                    <hr>
                     <select id="dropdown">
-                        <option value=""></option>
-                        <option value="1"></option>
-                        <option value="2"></option>
+                        <option value="">(Choose one)</option>
+                        <option value="1">A friend told me about it</option>
+                        <option value="2">I found it on social media</option>
                     </select>
                 </label>
-                <label for="bio">
-                    <textarea id="bio"></textarea>
+                <hr>
+                <label for="bio"> Tell me a little about yourself:
+                    <hr>
+                    <textarea id="bio" placeholder=' e.g. "I am a scientist, on 1905 i developed the theory of relativity..." ' ></textarea>
                 </label>
             </fieldset>
+
             <input id="submit" type="submit" value="Submit" />
         </form>
     </body>
