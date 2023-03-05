@@ -2,7 +2,7 @@ body {
     background-color: black;
     /* background-color: rgb(0, 2, 100); */
     color: white;
-    max-width: 500px;
+    max-width: 465px;
     min-width: 100px;
 }
 
@@ -30,7 +30,7 @@ fieldset {
     color: white;
     font-family: sans-serif;
     font-style: Bold;
-    min-width: 500px;
+    min-width: 465px;
 }
 
 input[type="submit"] {
