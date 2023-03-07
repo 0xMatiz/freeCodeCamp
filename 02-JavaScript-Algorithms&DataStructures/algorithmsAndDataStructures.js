@@ -5,11 +5,14 @@ JavaScript is a scripting language you can use to make web pages interactive. It
 In this course, you'll learn fundamental programming concepts in JavaScript. You'll start with basic data structures like numbers and strings. Then you'll learn to work with arrays, objects, functions, loops, if/else statements, and more. */
 
 
-//Manipulate Arrays With unshift Method
+//Manipulate Arrays With unshift Method - 42% Complete
 
 // Setup
 const myArray = [["John", 23], ["dog", 3]];
 myArray.shift();
 
 // Only change code below this line
+myArray.unshift(["Paul", 35]);
 
+
+//
