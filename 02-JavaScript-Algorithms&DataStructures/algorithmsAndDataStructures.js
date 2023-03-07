@@ -20,7 +20,7 @@ const myList = [];
 myList.unshift(["Chocolate Bar", 15],["Cereal Bar", 10],["Yogurt Bar", 20],["White Chocolate Bar", 5],["Water Bottle", 40]);
 
 
-/*Write Reusable JavaScript with Functions - % Complete
+/*Write Reusable JavaScript with Functions - 43% Complete
 In JavaScript, we can divide up our code into reusable parts called functions.
 Here's an example of a function:
 function functionName() {
