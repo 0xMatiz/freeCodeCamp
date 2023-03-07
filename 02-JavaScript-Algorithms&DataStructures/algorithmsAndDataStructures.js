@@ -665,7 +665,7 @@ function testElse(val) {
 
 
 
-  /* Introducing Else If Statements - 65% Complete
+  /* Introducing Else If Statements - 64% Complete
 If you have multiple conditions that need to be addressed, you can chain if statements together with else if statements.
 
 if (num > 15) {
@@ -690,7 +690,7 @@ function testElseIf(val) {
 
 
 
-  /* Logical Order in If Else Statements - 64% Complete
+  /* Logical Order in If Else Statements - 65% Complete
 Order is important in if, else if statements.
 
 The function is executed from top to bottom so you will want to be careful of what statement comes first.
@@ -740,4 +740,47 @@ function orderMyLogic(val) {
 
 
 
-/*  */
+/* Chaining If Else Statements - 66% Complete
+if/else statements can be chained together for complex logic. Here is pseudocode of multiple chained if / else if statements:
+
+if (condition1) {
+  statement1
+} else if (condition2) {
+  statement2
+} else if (condition3) {
+  statement3
+. . .
+} else {
+  statementN
+}
+Write chained if/else if statements to fulfill the following conditions:
+
+num < 5 - return Tiny
+num < 10 - return Small
+num < 15 - return Medium
+num < 20 - return Large
+num >= 20 - return Huge */
+
+function testSize(num) {
+    // Only change code below this line
+    if (num < 5) {
+      return 'Tiny';
+    } else if (num < 10) {
+      return 'Small';
+    } else if (num < 15) {
+      return 'Medium';
+    } else if (num < 20) {
+      return 'Large'
+    } else if (num >= 20) {
+      return 'Huge';
+    } else {
+    return "Change Me";
+    }
+    // Only change code above this line
+  }
+  
+  testSize(7);
+
+
+
+  /*  */
