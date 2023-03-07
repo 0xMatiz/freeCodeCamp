@@ -125,7 +125,7 @@ function fun2() {
 
 
 
-/* Local Scope and Functions
+/* Local Scope and Functions - 47% Complete
 
 Variables which are declared within a function, as well as the function parameters, have local scope. That means they are only visible within that function.
 
