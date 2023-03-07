@@ -566,7 +566,8 @@ function testLessOrEqual(val) {
 
 
 
-  /* Comparisons with the Logical And Operator - 60% Complete
+  /* Comparisons with the Logical And Operator - 61% Complete
+
 Sometimes you will need to test more than one thing at a time. The logical and operator (&&) returns true if and only if the operands to the left and right of it are true.
 
 The same effect could be achieved by nesting an if statement inside another if:
@@ -595,6 +596,97 @@ function testLogicalAnd(val) {
   }
   
   testLogicalAnd(10);
+
+
+
+  /* Comparisons with the Logical Or Operator - 62% Complete
+The logical or operator (||) returns true if either of the operands is true. Otherwise, it returns false.
+
+The logical or operator is composed of two pipe symbols: (||). This can typically be found between your Backspace and Enter keys.
+
+The pattern below should look familiar from prior waypoints:
+
+if (num > 10) {
+  return "No";
+}
+if (num < 5) {
+  return "No";
+}
+return "Yes";
+will return Yes only if num is between 5 and 10 (5 and 10 included). The same logic can be written as:
+
+if (num > 10 || num < 5) {
+  return "No";
+}
+return "Yes";
+Combine the two if statements into one statement which returns the string Outside if val is not between 10 and 20, inclusive. Otherwise, return the string Inside. */
+function testLogicalOr(val) {
+    // Only change code below this line
+  
+    if (val < 10 || val > 20) {
+      return "Outside";
+    }
+  
+    // Only change code above this line
+    return "Inside";
+  }
+  
+  // Change this value to test
+  testLogicalOr(15);
+
+
+
+  /* Introducing Else Statements - 63% Complete
+When a condition for an if statement is true, the block of code following it is executed. What about when that condition is false? Normally nothing would happen. With an else statement, an alternate block of code can be executed.
+
+if (num > 10) {
+  return "Bigger than 10";
+} else {
+  return "10 or Less";
+}
+Combine the if statements into a single if/else statement. */
+function testElse(val) {
+    let result = "";
+    // Only change code below this line
+  
+    if (val > 5) {
+      result = "Bigger than 5";
+    }
+  
+    else {
+      result = "5 or Smaller";
+    }
+  
+    // Only change code above this line
+    return result;
+  }
+  
+  testElse(4);
+
+
+
+  /* Introducing Else If Statements - 64% Complete
+If you have multiple conditions that need to be addressed, you can chain if statements together with else if statements.
+
+if (num > 15) {
+  return "Bigger than 15";
+} else if (num < 5) {
+  return "Smaller than 5";
+} else {
+  return "Between 5 and 15";
+}
+Convert the logic to use else if statements. */
+function testElseIf(val) {
+    if (val > 10) {
+      return "Greater than 10";
+    } else if (val < 5) {
+      return "Smaller than 5";
+    } else {
+    return "Between 5 and 10";
+    }
+  }
+  
+  testElseIf(7);
 
 
 
