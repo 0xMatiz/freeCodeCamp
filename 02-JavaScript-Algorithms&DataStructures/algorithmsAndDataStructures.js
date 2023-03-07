@@ -156,7 +156,7 @@ function myLocalScope() {
 
 
 
-/* Global vs. Local Scope in Functions  - 48% Complete
+/* Global vs. Local Scope in Functions - 48% Complete
   It is possible to have both local and global variables with the same name. When you do this, the local variable takes precedence over the global variable.
   
   In this example:
@@ -184,7 +184,9 @@ myOutfit();
 
 
 
-/* A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.
+/* Understanding Undefined Value returned from a Function - 48% Complete
+
+A function can include the return statement but it does not have to. In the case that the function doesn't have a return statement, when you call it, the function processes the inner code but the returned value is undefined.
 
 Example
 
