@@ -1927,7 +1927,7 @@ function sum(arr, n) {
 
 
 
-/* Profile Lookup - 91% COMPLETE
+/* Profile Lookup - 92% COMPLETE
 
 We have an array of objects representing different people in our contacts lists.
 
