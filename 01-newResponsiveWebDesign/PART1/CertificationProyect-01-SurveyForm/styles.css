@@ -36,3 +36,7 @@ textarea {
     min-width: 425px;
     min-height: 100px;
 }
+
+.personal-data > p {
+    width: 50%;
+}
