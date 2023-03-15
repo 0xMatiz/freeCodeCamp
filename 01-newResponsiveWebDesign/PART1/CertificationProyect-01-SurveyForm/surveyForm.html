@@ -1,59 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title id="head-title">Survey Form</title>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body>
-        <h1 id="title">Survey Form</h1>
-        
-        <p id="description">In this survey form you will be asked some data to let me know a little bit about who are the people that follow my website. This is optional and i appreciate you took time for letting me know!</p>
-        
-        <form id="survey-form"> <!--IDEA: Here you could add some "IF" logic with JS to make a return message if some data is in a wrong format-->
-            
-            <fieldset>Personal Data:
-                <hr class="personal-data-hr">
-                <label id="name-label">Enter Your Name: <input id="name" type="text" placeholder=' e.g. "Albert Einstein" ' required /></label>
-                <hr>
-                <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder=' e.g. "albert.einstein@genius.com"' required /></label>
-                <hr>
-                <label id="number-label">Enter Your Age: <input id="number" type="number" placeholder=' e.g. "76" ' min="1" max="120" required /></label>
-            </fieldset>
 
-            <fieldset>What is your approach to this website?
-                <hr>
+    <body>
+        <script src="./logic.js"></script>
+        <h1 id="title">Survey Form</h1>
+        <p id="description" class="description">In this survey form you will be asked some data to let me know a little bit about who are the people that follow my website. This is optional and i appreciate you took time for letting me know!</p>
+        <form id="survey-form"> <!--IDEA: Here you could add some "IF" logic with JS to make a return message if some data is in a wrong format-->    
+            <fieldset>
+                <p>Personal Data</p>
+                <div class="divider"></div>
+                <label id="name-label">Full Name <input id="name" type="text" placeholder=' e.g. "Albert Einstein" ' required /></label>
+                <div class="divider"></div>
+                <label id="email-label">Email <input id="email" type="email" placeholder=' e.g. "albert.einstein@genius.com"' required /></label>
+                <div class="divider"></div>
+                <label id="number-label">Age <input id="number" type="number" placeholder=' e.g. "76" ' min="1" max="120" required /></label>
+            </fieldset>
+            <fieldset>
+                <p>What is your approach to this website?</p>
+                <div class="divider"></div>
                 <label for="choice-one"><input id="choice-one" value="1" name="choice" type="radio"/> Curiosity</label>
-                <hr>
+                <div class="divider"></div>
                 <label for="choice-two"><input id="choice-two" value="2" name="choice" type="radio" /> Searching For Advice</label>
             </fieldset>
-
-            <fieldset id="checkbox-fieldset">I accept:
-                <hr>
+            <fieldset id="checkbox-fieldset">
+                <p>I <span>"The User"</span> Accept</p>
+                <div class="divider"></div>
                 <label><input value="1" type="checkbox" /> That this information will only be used for personal research purposes.</label>
-                <hr>
+                <div class="divider"></div>
                 <label><input value="2" type="checkbox" required /> The terms and conditions of this website.</label>
-                <hr>
+                <div class="divider"></div>
                 <label><input value="3" type="checkbox" /> Receiving newsletter and updates about this website.</label>
             </fieldset>
-
             <fieldset>
-                <label>How did you get to my website?
-                    <hr>
+                <label>
+                    <p>How did you get to my website?</p>
+                    <div class="divider"></div>
                     <select id="dropdown">
                         <option value="">(Choose one)</option>
                         <option value="1">A friend told me about it</option>
                         <option value="2">I found it on social media</option>
                     </select>
                 </label>
-                <hr>
-                <label for="bio"> Tell me a little about yourself:
-                    <hr>
+                <div class="divider"></div>
+                <label for="bio">
+                    <p>Tell me a little about yourself:</p>
+                    <div class="divider"></div>
                     <textarea id="bio" placeholder=' e.g. "I am a scientist, on 1905 i developed the theory of relativity..." ' ></textarea>
                 </label>
             </fieldset>
-
             <input id="submit" type="submit" value="Submit" />
         </form>
     </body>

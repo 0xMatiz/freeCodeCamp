@@ -1,46 +1,38 @@
 body {
     background-color: black;
-    /* background-color: rgb(0, 2, 100); */
     color: white;
     max-width: 465px;
     min-width: 100px;
+    margin: auto;
+    font-family: sans-serif;
+    font-style: bold;
 }
 
-hr {
+.divider {
     border: 0;
     border-color: rgb(2, 2, 131);
+    margin: 10px auto;
 }
 
 h1 {
     text-align: center;
     background: linear-gradient( rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
-    /* background-color: rgb(2, 2, 131); */
     color: white;
-    font-family: sans-serif;
-    font-style: Bold;
-}
-
-p {
-    font-family: sans-serif;
-    font-style: Bold;
+    margin: 25px auto;
 }
 
 fieldset {
     background: linear-gradient(rgba(0, 0, 255, 0.5), rgb(15, 15, 15));
     color: white;
-    font-family: sans-serif;
-    font-style: Bold;
-    min-width: 465px;
 }
 
 input[type="submit"] {
-    margin: 10px 0 0 0;
-    font-family: sans-serif;
+    margin: 10px auto;
     font-size: 16px;
-    
 }
 
 textarea {
-    min-width: 460px;
+    align-items: center;
+    min-width: 425px;
     min-height: 100px;
 }
