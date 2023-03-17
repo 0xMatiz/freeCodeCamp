@@ -1,30 +1,30 @@
 * {
-    color: #d6d6d6;
-}
-
-body {
-    background-color: black;
-    max-width: 465px;
-    min-width: 100px;
-    margin: auto;
     font-family: sans-serif;
     font-style: bold;
 }
 
+body {
+    background: linear-gradient(rgb(0, 0, 0) , rgb(0, 0, 255), rgb(0, 0, 0));
+    background-color: black;
+    max-width: 350px;
+    min-width: 200px;
+    margin: auto;
+    color: #d6d6d6;
+}
+
 .divider {
-    border: 0;
-    border-color: rgb(2, 2, 131);
     margin: 10px auto;
+    
 }
 
 h1 {
     text-align: center;
-    background: linear-gradient( rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
+    background: linear-gradient( rgb(0, 0, 255), rgb(0, 0, 0));
     margin: 25px auto;
 }
 
 fieldset {
-    background: linear-gradient(rgba(0, 0, 255, 0.5), rgb(15, 15, 15));
+    background: linear-gradient(rgb(0, 0, 0) ,rgb(0, 0, 255), rgb(0, 0, 0));
 }
 
 input[type="submit"] {
@@ -34,22 +34,23 @@ input[type="submit"] {
 
 textarea {
     align-items: center;
-    min-width: 425px;
+    min-width: 98%;
     min-height: 100px;
 }
 
-#name {
-    width: 50%;
-    margin-left: 30px;
+p {
+    text-align: center;
+}
 
+#name {
+    width: 70%;
 }
 
 #email {
-    width: 50%;
-    margin-left: 33px;
+    width: 70%;
 }
 
 #number {
-    width: 50%;
-    margin-left: 45px;
+    width: 70%;
+    
 }

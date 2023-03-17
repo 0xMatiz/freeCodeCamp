@@ -21,13 +21,13 @@
                 <p class="personal-data-p">Personal Data</p>
                 <div class="divider"></div>
 
-                <label id="name-label"><span class="center">Name</span><input id="name" type="text" placeholder=' e.g. "Albert Einstein" ' required /></label>
+                <label id="name-label"><span id="name-span">Name </span><input id="name" type="text" placeholder=' e.g. "Albert Einstein" ' required /></label>
                 <div class="divider"></div>
 
-                <label id="email-label"><span class="center">Email</span><input id="email" type="email" placeholder=' e.g. "albert.einstein@genius.com"' required /></label>
+                <label id="email-label"><span id="email-span">Email </span><input id="email" type="email" placeholder=' e.g. "albert.einstein@genius.com"' required /></label>
                 <div class="divider"></div>
 
-                <label id="number-label"><span class="center">Age</span><input id="number" type="number" placeholder=' e.g. "76" ' min="1" max="120" required /></label>
+                <label id="number-label"><span id="age-span">Age </span><input id="number" type="number" placeholder=' e.g. "76" ' min="1" max="120" required /></label>
             </fieldset>
             
             <fieldset>
@@ -37,11 +37,11 @@
                 <label for="choice-one"><input id="choice-one" value="1" name="choice" type="radio"/> Curiosity</label>
                 <div class="divider"></div>
 
-                <label for="choice-two"><input id="choice-two" value="2" name="choice" type="radio" /> Searching For Advice</label>
+                <label for="choice-two"><input id="choice-two" value="2" name="choice" type="radio" /> Searching for advice</label>
             </fieldset>
             
             <fieldset id="checkbox-fieldset">
-                <p>I <span>"The User"</span> Accept</p>
+                <p>I <span>"the user"</span> accept</p>
                 <div class="divider"></div>
 
                 <label><input value="1" type="checkbox" /> That this information will only be used for personal research purposes.</label>
@@ -53,7 +53,7 @@
                 <label><input value="3" type="checkbox" /> Receiving newsletter and updates about this website.</label>
             </fieldset>
             
-            <fieldset>
+            <fieldset id="dropdown-fieldset">
                 <label>
                     <p>How did you get to my website?</p>
                     <div class="divider"></div>
@@ -64,10 +64,11 @@
                         <option value="2">I found it on social media</option>
                     </select>
                 </label>
-                <div class="divider"></div>
-
+            </fieldset>
+                
+            <fieldset id="bio-fieldset">
                 <label for="bio">
-                    <p>Tell me a little about yourself:</p>
+                    <p>Tell me a little about yourself and anything you would like to ask me</p>      
                     <div class="divider"></div>
 
                     <textarea id="bio" placeholder=' e.g. "I am a scientist, on 1905 i developed the theory of relativity..." ' ></textarea>
