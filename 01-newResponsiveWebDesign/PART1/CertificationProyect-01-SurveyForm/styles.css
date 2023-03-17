@@ -1,6 +1,9 @@
+* {
+    color: #d6d6d6;
+}
+
 body {
     background-color: black;
-    color: white;
     max-width: 465px;
     min-width: 100px;
     margin: auto;
@@ -17,13 +20,11 @@ body {
 h1 {
     text-align: center;
     background: linear-gradient( rgba(0, 0, 255, 0.5), rgba(0, 0, 0, 0.5));
-    color: white;
     margin: 25px auto;
 }
 
 fieldset {
     background: linear-gradient(rgba(0, 0, 255, 0.5), rgb(15, 15, 15));
-    color: white;
 }
 
 input[type="submit"] {
@@ -37,6 +38,18 @@ textarea {
     min-height: 100px;
 }
 
-.personal-data > p {
+#name {
     width: 50%;
+    margin-left: 30px;
+
+}
+
+#email {
+    width: 50%;
+    margin-left: 33px;
+}
+
+#number {
+    width: 50%;
+    margin-left: 45px;
 }
