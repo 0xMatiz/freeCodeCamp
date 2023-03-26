@@ -5,10 +5,6 @@
 
 body {
     background: linear-gradient(rgb(0, 0, 0) , rgb(0, 0, 255), rgb(0, 0, 0));
-    background-color: black;
-    max-width: 350px;
-    min-width: 200px;
-    margin: auto;
     color: #d6d6d6;
 }
 
@@ -21,10 +17,35 @@ h1 {
     text-align: center;
     background: linear-gradient( rgb(0, 0, 255), rgb(0, 0, 0));
     margin: 25px auto;
+    max-width: 350px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#description {
+    max-width: 350px;
+    min-width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form {
+    background-color: black;
+    max-width: 350px;
+    min-width: 200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 fieldset {
     background: linear-gradient(rgb(0, 0, 0) ,rgb(0, 0, 255), rgb(0, 0, 0));
+    padding: 5px;
+}
+
+p {
+    text-align: center;
 }
 
 input[type="submit"] {
@@ -36,21 +57,22 @@ textarea {
     align-items: center;
     min-width: 98%;
     min-height: 100px;
-}
-
-p {
-    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #name {
     width: 70%;
+    margin-left: 1px;
 }
 
 #email {
     width: 70%;
+    margin-left: 4px;
 }
 
 #number {
     width: 70%;
-    
+    margin-left: 15px;
 }
+
