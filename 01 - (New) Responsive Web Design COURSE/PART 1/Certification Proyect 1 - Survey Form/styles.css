@@ -1,35 +1,41 @@
 * {
   font-family: sans-serif;
-  font-style: bold;
+  font-weight: bold;
+}
+
+:root {
   --border-color1: blue;
   --border-color2: white;
   --border-color3: black;
-  --background-gradient1: linear-gradient(
-    45deg,
-    black,
-    blue,
-    black    
-  );
-  --background-gradient2: linear-gradient(
-    145deg,
-    black,
-    blue,
-    black    
-  );
-  color: var(--border-color2)
+  --background-gradient1: linear-gradient(0deg, black, blue, black);
+  --background-gradient2: linear-gradient(45deg, black, blue, black);
+  --background-gradient3: linear-gradient(90deg, black, blue, black);
+  --background-gradient4: linear-gradient(135deg, black, blue, black);
+  --text-color: white;
 }
 
 body {
   background: var(--background-gradient2);
   height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  animation: breathe 6s infinite;
 }
 
-.bg1 {
-  background: var(--background-gradient1);
-}
-
-.bg2 {
-  background: var(--background-gradient2);
+@keyframes breathe {
+  0%, 100% {
+    background: var(--background-gradient1);
+  }
+  25% {
+    background: var(--background-gradient2);
+  }
+  50% {
+    background: var(--background-gradient3);
+  }
+  75% {
+    background: var(--background-gradient4);
+  }
 }
 
 .bordered-inside {
@@ -45,12 +51,9 @@ p {
   text-align: center;
   background: var(--background-gradient1);
   border: 2px solid var(--border-color2);
-  margin: 25px auto;
+  margin: 25px auto 5px;
   max-width: 350px;
   min-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 5px;
 }
 
 #description {
@@ -59,44 +62,49 @@ p {
   max-width: 350px;
   min-width: 200px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 form {
   max-width: 350px;
   min-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 fieldset {
   border: 2px solid var(--border-color2);
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-#name {
-  width: 70%;
-  margin-left: 2px;
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select#dropdown,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transition: box-shadow 0.3s ease;
 }
 
-#email {
-  width: 70%;
-  margin-left: 5px;
-}
-
-#number {
-  width: 70%;
-  margin-left: 17px;
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+select#dropdown:focus,
+textarea:focus {
+  box-shadow: 0 0 10px rgba(0, 128, 255, 0.7);
 }
 
 select#dropdown {
   background: var(--border-color3);
-}
-
-textarea {
-  align-items: center;
-  min-width: 98%;
-  min-height: 100px;
 }
 
 #submit {
@@ -105,4 +113,11 @@ textarea {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 16px;
+  padding: 5px 10px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+#submit:hover {
+  transform: scale(1.1);
 }
